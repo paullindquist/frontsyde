@@ -1,4 +1,8 @@
+.DS_Store
 .history
 node_modules/
 .swp
+<<<<<<< HEAD
 .cache/
+=======
+>>>>>>> 5bdec4cb4444712a7ca5322d646e3ec02b164d87
