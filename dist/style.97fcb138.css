@@ -7,16 +7,17 @@
 html {
   scroll-behavior: smooth;
   width: 100vw;
+  overflow-x: hidden;
 }
 html body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #1a2229;
   color: #b7b7b7;
   font-family: "Martel Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 footer {
@@ -238,7 +239,7 @@ footer {
 }
 #examples_container #example_2 a img, #examples_container #example_1 a img {
   max-width: 80%;
-  border-radius: 16px;
+  border-radius: 8px;
   border: solid 1px black;
 }
 
@@ -282,7 +283,6 @@ footer {
 
 #contact_form {
   color: #fff;
-  padding: 3em;
 }
 #contact_form input,
 #contact_form textarea {

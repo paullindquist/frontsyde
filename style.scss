@@ -15,13 +15,14 @@ html {
 	width: 100vw;
 	body {
 		width: 100vw;
+    overflow-x: hidden;
 	}
+  overflow-x: hidden;
 }
 body {
 	background-color: #1a2229;
 	color: #b7b7b7;
 	font-family: 'Martel Sans', sans-serif;
-	overflow-x: hidden;
 }
 footer {
 	padding: 15px;
@@ -222,7 +223,7 @@ footer {
       text-align: center;
       img {
         max-width: 80%;
-        border-radius: 16px;
+        border-radius: 8px;
         border: solid 1px black;
       }
     }
@@ -261,7 +262,6 @@ footer {
 }
 #contact_form {
 	color: #fff;
-	padding: 3em;
 	input,
 	textarea {
 		color: #fff;
