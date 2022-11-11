@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.scss">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Frontside Applications</title>
 </head>
 <body>
@@ -72,11 +73,16 @@
     <div id="contact_form">
       <h2>Contact Us!</h2>
       <form action="https://formspree.io/f/moqplgkr" id="form" method="POST">
+          <div
+          class="g-recaptcha"
+          data-sitekey="6Lc9I_wiAAAAAMsfHXB1OZCHax5pinsFlYZSctI_"
+          data-callback="callback"
+        ></div>
         <input name="name" type="text" placeholder="Full Name*" required/>
         <input name="_replyto" type="email" placeholder="Email*" required/>
         <input name="tel" type="tel" placeholder="Phone"/>
         <textarea name="message" placeholder="Your Message*" required></textarea>
-        <button id="contact_submit" class="contact_button">Submit</button>
+        <button id="contact_submit" class="contact_button" disabled>Submit</button>
       </form>
     </div>
   </div>
@@ -89,6 +95,12 @@
     gtag('js', new Date());
 
     gtag('config', 'G-E2V0KSMV3L');
+  </script>
+  <script type="text/javascript">
+    function callback() {
+      const submitButton = document.getElementById("contact_submit");
+      submitButton.removeAttribute("disabled");
+    }
   </script>
 </body>
 </html>
