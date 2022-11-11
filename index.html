@@ -8,8 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.scss">
+  <script type="text/javascript">
+    function callback() {
+      const submitButton = document.getElementById("contact_submit");
+      submitButton.removeAttribute("disabled");
+    }
+  </script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <title>Frontside Applications</title>
+  <title>Frontside Applications </title>
 </head>
 <body>
   <!--
@@ -95,12 +101,6 @@
     gtag('js', new Date());
 
     gtag('config', 'G-E2V0KSMV3L');
-  </script>
-  <script type="text/javascript">
-    function callback() {
-      const submitButton = document.getElementById("contact_submit");
-      submitButton.removeAttribute("disabled");
-    }
   </script>
 </body>
 </html>
