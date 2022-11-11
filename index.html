@@ -14,13 +14,17 @@
   <div class="oval_container">
     <div class="oval"></div>
   </div>
-  <div id="container_0" class="container">
+  <div id="container_0" class="full_height_container">
     <section class="welcome">
       <h1 class="welcome_message">welcome to</h1>
       <h1 class="company_name">FRONTSIDE</h1>
-      <div>
+      <div id="intro_container">
         <p>Frontside Applications is a boutique web design firm catering to the Twin Cities and Western Wisconsin area.</p>
-        <a href="#contact_container"><button class="contact_button">Contact Us</button></a> 
+        <p>
+          Whether you're a small business needing an overhaul of an existing site or an independent artist looking to create a brand new web identity, Frontside will parnter with you to develop a bold and functional cross-platform interface.
+          We work closely with you through every step of the process to ensure you are entirely satisfied with the final product.</p> 
+        </p>
+        <a href="#contact"><button class="contact_button">Contact Us</button></a> 
         </div>
     </section>
     <section class="showcase">
@@ -30,43 +34,41 @@
         <div id="logo"><img alt="Minneapolis Skyline" src="img/skyline.png"/></div>
       </div>
     </section>
-    <div class="learn_more"><a href="#contact_container">Learn more ↓</a></div>
   </div>
-  <div class="container" id="creative_container">
-    <h2>Creative</h2>
-    <div class="copy_container">
-      <p>Frontside is here to kick flip your site to new heights. From design and image sourcing to copywrite services, we will make certain your message is heard.
-          <img alt="Decorative skateboard" id="contact_image_copy" src="img/contact.png"/>
-      </p>
-      <p>A professional presence requires more than just a web address. We ensure your look is cohesive, your content is polished, and your interface is streamlined. Allow us to show you the synergy of form plus function.</p>
-      <a class="hide_xs" href="#contact"><button class="contact_button">Contact Us</button></a> 
-    </div>
-  </div>
-  <div class="container" id="develop_container">
-    <h2>Develop</h2>
-    <div class="copy_container">
-      <p>Drag and drop programs lead every Joe/Jane Interweb to believe they can create their own site, but there is a reason people go to school for programming. Would you believe you could drill someone's cavity because you watched a YouTube video of someone at the dentist? Professional development services are critical in building a site that functions seamlessly.
-          <img alt="Decorative skateboard" id="develop_image_copy" src="img/develop.png"/>
-      </p>
-      <p>Today's consumers expect simplicity and convenience. If your site is not optimized across various devices, it speaks volumes to your clients. Frontside will work with you to ensure your site is intuitive and your message isn't getting lost in the grind of clicks and shuffles.</p>
-      <p>A professional presence requires more than just a web address. We ensure your look is cohesive, your content is polished, and your interface is streamlined. Allow us to show you the synergy of form plus function.</p>
-      <a class="hide_xs" href="#contact"><button class="contact_button">Contact Us</button></a> 
-    </div>
-  </div>
-  <div class="container" id="contact_container">
-    <div id="contact_text">
-      <h2>CONTACT US!</h2>
-      <div id="contact_content">
-        <div>
-          <p>
-          <img id="contact_us_image" alt="Contact Us" src="img/contact.png"/>
-          Whether you're a small business needing an overhaul of an existing site or an independent artist looking to create a brand new web identity, Frontside will parnter with you to develop a bold and functional cross-platform interface.
-          <br>We work closely with you through every step of the process to ensure you are entirely satisfied with the final product.</p> 
-        </div>
+  <div class="middle_container">
+    <div id="creative" class="container">
+      <h2>Creative</h2>
+      <div class="copy_container">
+        <p>Frontside is here to kick flip your site to new heights. From design and image sourcing to copywrite services, we will make certain your message is heard.
+            <img alt="Decorative skateboard" id="contact_image_copy" src="img/contact.png"/>
+        </p>
+        <p>A professional presence requires more than just a web address. We ensure your look is cohesive, your content is polished, and your interface is streamlined. Allow us to show you the synergy of form plus function.</p>
       </div>
     </div>
+    <div id="develop" class="container">
+      <h2>Develop</h2>
+      <div class="copy_container">
+        <p>Drag and drop programs lead every Joe/Jane Interweb to believe they can create their own site, but there is a reason people go to school for programming. Would you believe you could drill someone's cavity because you watched a YouTube video of someone at the dentist? Professional development services are critical in building a site that functions seamlessly.
+            <img alt="Decorative skateboard" id="develop_image_copy" src="img/develop.png"/>
+        </p>
+        <p>Today's consumers expect simplicity and convenience. If your site is not optimized across various devices, it speaks volumes to your clients. Frontside will work with you to ensure your site is intuitive and your message isn't getting lost in the grind of clicks and shuffles.</p>
+      </div>
+    </div>
+  </div>
+  <div id="portfolio_container">
+      <h2>Portfolio</h2>
+      <div id="examples_container">
+        <div id="example_1">
+          <a href="https://villageofwoodville.org"><img src="/img/woodville.jpg"/></a>
+        </div>
+        <div id="example_2">
+          <a href="https://djrestaurante.com/"><img src="/img/djs.jpg"/></a>
+        </div>
+      </div>
+  </div>
+  <div class="container" id="contact">
     <div id="contact_form">
-      <h2>FREE QUOTE!</h2>
+      <h2>Contact Us!</h2>
       <form action="https://formspree.io/f/moqplgkr" method="POST">
         <input name="name" type="text" placeholder="Full Name*" required/>
         <input name="_replyto" type="email" placeholder="Email*" required/>
